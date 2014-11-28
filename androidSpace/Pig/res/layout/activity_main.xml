@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<RelativeLayout
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp" >
+	  	<TextView 
+		    android:id="@+id/Round_Label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="100dp"
+	        android:layout_marginLeft="115dp"
+	        android:maxLines="1"
+	        android:gravity="center"     
+	        android:textAppearance="?android:attr/textAppearanceSmall"  
+	        android:text="@string/Round_Label"
+	        android:hint="@+id/Round_Label" >
+	    </TextView>
+	  	<TextView 
+		    android:id="@+id/Round_Score"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="125dp"
+	        android:layout_marginLeft="125dp"
+	        android:layout_below="@+id/Round_Label"
+	        android:gravity="center"     
+	        android:textAppearance="?android:attr/textAppearanceMedium"  
+	        android:textStyle="bold"
+	        android:text="@+id/Round_Score"
+	        android:hint="@+id/hint" >
+	  	</TextView>
+	  	<TextView 
+		    android:id="@+id/Die_Label"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="135dp"
+	        android:layout_marginLeft="125dp"
+	        android:layout_below="@+id/Round_Score"
+	        android:gravity="center"     
+	        android:textAppearance="?android:attr/textAppearanceSmall"  
+	        android:text="@string/Die_Label"
+			android:hint="@+id/Die_Label" >
+	    </TextView>
+	    <TextView 
+		    android:id="@+id/Die"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="125dp"
+	        android:layout_marginLeft="120dp"
+	        android:layout_below="@+id/Die_Label"
+	   	    android:gravity="center"	   
+	   	    android:maxLines="1" 
+	   	    android:textAppearance="?android:attr/textAppearanceMedium"
+	   	    android:textStyle="bold"
+	        android:text="@+id/Die"
+	        android:hint="@+id/hint" >
+	    </TextView>
+	    <TextView 
+		    android:id="@+id/Human_Label"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="50dp"
+	        android:layout_marginLeft="25dp"
+	        android:layout_below="@+id/Die"
+	        android:gravity="left"     
+	        android:maxLines="1"
+	        android:textAppearance="?android:attr/textAppearanceSmall"  
+	        android:text="@string/Human_Label"
+	        android:hint="@+id/Human_Label" >
+	    </TextView>
+	    <TextView 
+		    android:id="@+id/Comp_Label"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="150dp"
+	        android:layout_marginLeft="140dp"
+	        android:layout_below="@+id/Die"
+	        android:gravity="right"     
+	        android:maxLines="1"
+	        android:textAppearance="?android:attr/textAppearanceSmall"  
+	        android:text="@string/Comp_Label"
+	        android:hint="@+id/Comp_Label" >
+	    </TextView>
+	    <TextView 
+		    android:id="@+id/Human_Score"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/Human_Label"
+	        android:layout_marginRight="175dp"
+	        android:layout_marginLeft="50dp"
+	       	android:gravity="left"	
+	       	android:textAppearance="?android:attr/textAppearanceMedium"
+	       	android:textStyle="bold"
+	        android:text="@+id/Human_Score"
+	        android:hint="@+id/H" >
+	    </TextView>
+	  	<TextView 
+		    android:id="@+id/Comp_Score"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="50dp"
+	        android:layout_marginLeft="175dp"
+	        android:layout_below="@+id/Comp_Label"
+	       	android:gravity="right"
+	       	android:textAppearance="?android:attr/textAppearanceMedium"
+	       	android:textStyle="bold"
+	        android:text="@+id/Comp_Score"
+	        android:hint="@+id/C" > 
+	  	</TextView>
+
+	    <Button
+		    android:id="@+id/Roll"
+		    android:layout_width="match_parent"
+		    android:layout_height="75dp"
+		    android:gravity="center"
+		    android:layout_below="@+id/Comp_Score"
+		    android:text="@string/Roll" />	
+	    <Button
+		    android:id="@+id/Hold"
+		    android:layout_width="match_parent"
+		    android:layout_height="75dp"
+		    android:gravity="center"
+		    android:layout_below="@+id/Roll"
+		    android:text="@string/Hold" />
+	    <Button
+		    android:id="@+id/New_Game"
+		    android:layout_width="match_parent"
+		    android:layout_height="75dp"
+		    android:gravity="center"
+		    android:layout_below="@+id/Hold"
+		    android:text="@string/New_Game" />    
+	</RelativeLayout>
+</LinearLayout>

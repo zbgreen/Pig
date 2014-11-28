@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pig</string>
+    <string name="Roll">Roll</string>
+    <string name="action_settings">Settings</string>
+    <string name="Hold">Hold</string>
+    <string name="New_Game">New Game</string>
+    <string name="Comp_Score">Comp Score</string>
+    <string name="Round_Score">Round Score</string>
+	<string name="Human_Score">Human Score</string>
+	<string name="Die">Die</string>
+	<string name="hint">0</string>
+	<string name="Human_Label">Human</string>
+	<string name="Comp_Label">Comp</string>
+	<string name="Die_Label">Die</string>
+	<string name="Round_Label">Round</string>
+</resources>
